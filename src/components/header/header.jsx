@@ -8,18 +8,14 @@ const header = () => {
     let hamMenuEl=document.getElementById("ham__menu")
     let mobileNav =document.getElementById("mobilenav")
     // console.log(hamMenuEl.classList.length)
-    if(hamMenuEl.className !== "hamActive"){
+    if(mobileNav.classList.length ===1){
       console.log("if")
-      hamMenuEl.classList.remove("header_hamburger__Wt4ob") 
-      hamMenuEl.classList.add("hamActive")
-      mobileNav.classList.remove("header_mobile__navbar__SZBjR")
+      mobileNav.classList.remove()
       mobileNav.classList.add("mobilenav")
     }else{
       console.log("else")
-      hamMenuEl.classList.remove("hamActive")
-      hamMenuEl.classList.add("header_hamburger__Wt4ob")
       mobileNav.classList.remove("mobilenav")
-      mobileNav.classList.add("header_mobile__navbar__SZBjR")
+      mobileNav.classList.add()
     }
   }
   return (
