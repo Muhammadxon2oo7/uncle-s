@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import c from "./Login.module.css"
-import {AiOutlineCloseCircle ,AiFillEye ,AiFillEyeInvisible , AiOutlineMail} from "react-icons/ai"
+import {AiOutlineCloseCircle ,AiFillEye ,AiFillEyeInvisible } from "react-icons/ai"
 const Login = (props) => {
     const [isPasswordShow , setIsPasswordShow]=useState(false)
     const handleEyeOpenClick = ()=>{
@@ -27,6 +27,7 @@ const Login = (props) => {
     <div className={c.register}>
         <div className={c.register__card}>
             <p className={c.log__title}>Log in</p>
+            {isPasswordShow}
             <div className={c.regclose__wrapper} onClick={props.logClose}>
                 <AiOutlineCloseCircle className={c.regclose__wrapper__icon}/>
             </div>

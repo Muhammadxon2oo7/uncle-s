@@ -19,7 +19,6 @@ const Header = () => {
     setIsLogOpen(false)
   }
   function hamfun(){
-    let hamMenuEl=document.getElementById("ham__menu")
     let mobileNav =document.getElementById("mobilenav")
     // console.log(hamMenuEl.classList.length)
     if(mobileNav.classList.length ===1){
