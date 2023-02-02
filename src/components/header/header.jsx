@@ -1,11 +1,23 @@
 import React from 'react'
+import { useState } from 'react'
 import c from './header.module.css'
 import './header.css'
 import {RxTriangleDown} from "react-icons/rx"
 import {FiMenu} from "react-icons/fi"
 import {BsTelephoneFill ,BsTelegram} from "react-icons/bs"
+import Register from '../register/Register'
 import logo from "../../assets/img/logo.png"
+import Login from '../login/Login'
+
 const header = () => {
+  const [isRegOpen , setIsRegOpen] = useState(false);
+  const regClose =()=>{
+    setIsRegOpen(false)
+  }
+  const [isLogOpen , setIsLogOpen] = useState(false);
+  const logClose =()=>{
+    setIsLogOpen(false)
+  }
   function hamfun(){
     let hamMenuEl=document.getElementById("ham__menu")
     let mobileNav =document.getElementById("mobilenav")
@@ -33,8 +45,22 @@ const header = () => {
           
         </div>
         <div className={c.reg_card}>
-          <a href="#" className={c.reg_register}>Register</a>
-          <a href="#" className={c.reg_login}>Login</a>
+          <a href="#" className={c.reg_register} onClick={()=>{
+            setIsRegOpen(true)
+          }}>Register</a>
+          {
+            isRegOpen&& (
+              <Register regClose={regClose}/>
+            )
+          }
+          <a href="#" className={c.reg_login}onClick={()=>{
+            setIsLogOpen(true)
+          }}>Login</a>
+          {
+            isLogOpen&& (
+              <Login logClose={logClose}/>
+            )
+          }
         </div>
       </div>
       <div className={c.middle__header}>
