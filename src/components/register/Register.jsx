@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import c from "./Register.module.css"
-import {AiOutlineCloseCircle ,AiFillEye ,AiFillEyeInvisible , AiOutlineMail} from "react-icons/ai"
+import {AiOutlineCloseCircle ,AiFillEye ,AiFillEyeInvisible} from "react-icons/ai"
 const Register = (props) => {
     const [isPasswordShow , setIsPasswordShow]=useState(false)
     const handleEyeOpenClick = ()=>{
@@ -33,6 +33,7 @@ const Register = (props) => {
             <form onSubmit={(e)=>{
                 e.preventDefault()
             }} action="" className={c.reg__form}>
+                {isPasswordShow}
                 <input type="email" className={c.reg__email} placeholder='email'/>
                 <div className={c.reg__password__wrapper}>
                     <input id='password' type="password" className={c.reg__password} placeholder='password'/>

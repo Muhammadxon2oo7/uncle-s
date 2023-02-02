@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import c from './header.module.css'
-import './header.css'
+import c from './Header.module.css'
+import './Header.css'
 import {RxTriangleDown} from "react-icons/rx"
 import {FiMenu} from "react-icons/fi"
 import {BsTelephoneFill ,BsTelegram} from "react-icons/bs"
@@ -9,7 +9,7 @@ import Register from '../register/Register'
 import logo from "../../assets/img/logo.png"
 import Login from '../login/Login'
 
-const header = () => {
+const Header = () => {
   const [isRegOpen , setIsRegOpen] = useState(false);
   const regClose =()=>{
     setIsRegOpen(false)
@@ -114,4 +114,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
