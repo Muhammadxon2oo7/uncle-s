@@ -3,6 +3,8 @@ import c from './header.module.css'
 import './header.css'
 import {RxTriangleDown} from "react-icons/rx"
 import {FiMenu} from "react-icons/fi"
+import {BsTelephoneFill ,BsTelegram} from "react-icons/bs"
+import logo from "../../assets/img/logo.png"
 const header = () => {
   function hamfun(){
     let hamMenuEl=document.getElementById("ham__menu")
@@ -21,6 +23,15 @@ const header = () => {
   return (
     <div>
       <div className={c.top_register_header}>
+        <div className={c.about_card}>
+          <a className={c.header_tell} href='tel:+998933771283'>
+            <BsTelephoneFill/> +998 (93) 3771383
+          </a>
+          <a className={c.header_telegram} href="https://t.me/JAMSHIDKHON_Imomov" target='_blank'>
+            <BsTelegram/>
+          </a>
+          
+        </div>
         <div className={c.reg_card}>
           <a href="#" className={c.reg_register}>Register</a>
           <a href="#" className={c.reg_login}>Login</a>
@@ -28,7 +39,8 @@ const header = () => {
       </div>
       <div className={c.middle__header}>
         <div className={c.middle__header__title}>
-          <p className={c.middle__header__title__p}>Journal of Positive School Psychology</p>
+          <img className={c.header__logo} src={logo} alt="" />
+          <p className={c.middle__header__title__p}>E-Investment</p>
         </div>
       </div>
       <div id='mbile_bottom_header' className={c.bottom__header}>

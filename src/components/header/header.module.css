@@ -10,11 +10,39 @@
     height: 40px;
     background-color: #2364a2;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     padding-left: 5px;
     padding-right: 5px;
+}
+.about_card{
+    display: flex;
+    height: 100%;
+    padding-left: 35px;
+}
+.header_telegram{
+
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header_telegram:hover{
+    font-size: 20px;
+}
+.header_tell{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.header__logo{
+    width:100px;
+    height:100px;
 }
 .reg_card{
     width: 150px;
@@ -55,7 +83,7 @@
     padding-left: 25px;
 }
 .middle__header__title{
-    width: 523px;
+    width: 303px;
     height: 110px;
     display: flex;
     justify-content: start;
@@ -63,10 +91,13 @@
     flex-wrap: wrap;
 }
 .middle__header__title__p{
-    color: #fff !important;
+    color: #fff ;
     font-size: 28px;
     margin: 30px 10px!important;
     cursor: pointer;
+}
+.middle__header__title__p:hover{
+    color: #30B815;
 }
 .bottom__header{
     width: 100%;
@@ -201,5 +232,6 @@ form button{
     }
     .middle__header__title{
         width: 100%;
+        justify-content: center;
     }
 }
