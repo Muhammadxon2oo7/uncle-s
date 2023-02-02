@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.top_register_header{
+    width: 100%;
+    height: 40px;
+    background-color: #2364a2;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.reg_card{
+    width: 150px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.reg_register{
+    width: 82px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+}
+.reg_login{
+    width: 64px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.reg_register:hover{
+    color: #333;
+}
+.reg_login:hover{
+    color: #333;
+}
+
+.middle__header{
+    width: 100%;
+    height: 110px;
+    background-color: #143c62;
+    
+    padding-left: 25px;
+}
+.middle__header__title{
+    width: 523px;
+    height: 110px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.middle__header__title__p{
+    color: #fff !important;
+    font-size: 28px;
+    margin: 30px 10px!important;
+    cursor: pointer;
+}
+.bottom__header{
+    width: 100%;
+    height: 50px;
+    background-color: #002f5d;
+}
+.mobile__navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.bottom__header__nabar{
+    display: flex;
+    list-style: none;
+}
+.bottom__header__nabar li{
+    padding: 10px 15px;
+}
+.bottom__header__nabar li>a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.bottom__header__nabar li:hover a{
+    color: rgb(83, 77, 77);
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px 0;
+}
+.dropdown__content a{
+    padding: 3px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+  }
+  .dropdown__content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown__content {
+    display: block;
+  }  
+
+form input{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    margin-right: 5px;
+}
+form button{
+    color: #fff;
+    background-color: #2364a2;
+    border-color: #ccc;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+.hamburger{
+    display: none;
+}
+@media only screen and (max-width:1172px){
+    .bottom__header{
+        justify-content: end;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-right: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        border-color: #ddd
+    }
+    .hamburger__icon{
+        color: #fff;
+        font-size: 20px;
+    }
+    .hamburger:hover{
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    .hamburger:hover .hamburger__icon{
+        color: #002f5d;
+    }
+    .mobile__navbar{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:554px){
+    .middle__header__title__p{
+        font-size: 18px;
+    }
+    .middle__header__title{
+        width: 100%;
+    }
+}
